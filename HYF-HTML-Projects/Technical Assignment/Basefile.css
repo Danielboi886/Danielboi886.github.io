@@ -1,0 +1,327 @@
+/* link to my Youtube self-intro: https://youtu.be/cx7oP7iwNe0 */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.webpage {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 800px) {
+  .webpage {
+    min-height: 100vh;
+    scroll-snap-type: none;
+  }
+}
+
+.page1 {
+  height: 100vh;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+
+.top_botton {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 120%;
+  font-family: Optima;
+  border-radius: 30px;
+  cursor: pointer;
+  position: fixed;
+  z-index: 98;
+  top: 90vh;
+  right: 10%;
+}
+.top_container {
+  height: 10%;
+  width: 100%;
+  background-color: rgb(64, 49, 36);
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0px;
+  z-index: 99;
+}
+
+@media (max-width: 800px) {
+  .top_container,
+  .title,
+  .menu_container {
+    width: 100%;
+  }
+  #menu_list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.title {
+  flex-grow: 3;
+  text-align: center;
+  align-self: center;
+}
+.menu_container {
+  flex-grow: 2;
+  align-self: center;
+}
+
+#title_word {
+  color: white;
+  font-family: Sitka Heading;
+  font-weight: normal;
+  font-size: 2.5vmax;
+}
+#menu_list li {
+  display: inline;
+  padding-right: 10%;
+  color: lightgrey;
+  font-family: Segoe UI;
+  font-size: 1.8vmax;
+}
+
+#menu_list li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.front_page {
+  position: relative;
+  background-color: rgb(64, 49, 36);
+  overflow: hidden;
+  display: flex;
+  vertical-align: middle;
+  min-height: 100%;
+}
+.front_page img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.page2 {
+  height: 100vh;
+  background-color: rgb(64, 49, 36);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  scroll-snap-align: start;
+}
+
+@media (max-width: 800px) {
+  .page2 {
+    position: relative;
+  }
+  .intro_box,
+  .coverphoto {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .intro_title {
+    padding: 0 10% 0 10%;
+  }
+
+  .intro_text {
+    padding: 10% 10% 0 10%;
+  }
+  .intro_box {
+    z-index: 20;
+    background-color: rgba(64, 49, 36, 0.85);
+  }
+  .coverphoto img {
+    width: 640px;
+  }
+}
+
+.intro_box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 10%;
+}
+
+#introt {
+  color: white;
+  font-family: Sitka Heading;
+  font-weight: normal;
+  font-size: 5vmax;
+}
+
+#intro {
+  color: lightgrey;
+  font-family: Optima;
+  font-size: 2.1vh;
+  line-height: 160%;
+}
+
+.coverphoto {
+  position: relative;
+  background-color: rgba(64, 49, 36);
+  box-shadow: -3px 0px 60px 20px rgb(52, 34, 22);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+  min-width: 60%;
+}
+
+.coverphoto img {
+  width: auto;
+  height: 100%;
+}
+
+.page3 {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(64, 49, 36);
+  scroll-snap-align: start;
+}
+
+@media (max-width: 800px) {
+  .cards {
+    max-height: 80%;
+    min-width: 80%;
+  }
+  .cards img {
+    height: auto;
+    max-width: 100%;
+  }
+  .page3,
+  .cards {
+    overflow-y: hidden;
+  }
+}
+
+.gallery,
+.portfolio {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.gallery {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.cards {
+  scroll-snap-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: whitesmoke;
+  box-shadow: 16px -16px 20px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 3%;
+}
+.cards img {
+  height: auto;
+  width: auto;
+  min-width: 100%;
+  max-height: 100%;
+  overflow-y: hidden;
+}
+
+.portfolio {
+  height: 30vh;
+  width: 100%;
+  margin-top: 3%;
+  z-index: 5;
+  background-image: linear-gradient(rgb(64, 49, 36), transparent);
+}
+
+.portfolio h1 {
+  color: white;
+  font-family: Garamond;
+  font-size: 5vmax;
+  padding-left: 5vh;
+}
+
+.page4 {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  background-color: rgb(64, 49, 36);
+  align-items: center;
+  justify-content: space-around;
+  scroll-snap-align: start;
+}
+
+@media screen and (max-width: 800px) {
+  .page4 {
+    flex-direction: column;
+    padding-top: 10%;
+    min-height: 140%;
+  }
+  .info {
+    max-height: 75%;
+  }
+  .info_box {
+    max-height: 75%;
+  }
+}
+
+.contact h1 {
+  color: white;
+  font-family: Garamond;
+  font-size: 5vmax;
+}
+
+.contact {
+  width: auto;
+}
+
+.info {
+  width: auto;
+  height: auto;
+  min-width: 60%;
+}
+.info_box {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  color: white;
+  font-family: Optima;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 2vh;
+  margin: 2vh 0;
+  display: flex;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="msg"],
+select {
+  width: 100%;
+  padding: 15vh;
+  margin: 2vh 0;
+  display: flex;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
