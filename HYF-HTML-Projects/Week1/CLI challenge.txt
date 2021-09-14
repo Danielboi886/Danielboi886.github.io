@@ -1,0 +1,26 @@
+Answer 1: you can create a hidden file by command (on Windows)
+
+touch .testfile.txt && attrib +h .testfile.txt
+
+and type 
+
+ls -a 
+
+to show it. 
+
+
+Answer 2: you can use mkdir -p command 
+
+For example：$ mkdir -p hyf-html-exercises/week1/css/version1
+
+
+Answer 3: You can use <<EOF>> command
+
+For example : cat << EOF >> testfile.txt
+              first message
+              second message
+              EOF
+
+
+
+Answer
