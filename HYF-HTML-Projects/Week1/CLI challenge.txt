@@ -20,7 +20,3 @@ For example : cat << EOF >> testfile.txt
               first message
               second message
               EOF
-
-
-
-Answer
