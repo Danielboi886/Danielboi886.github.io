@@ -270,7 +270,6 @@ body {
   #con {
     display: flex;
     flex-direction: row;
-    padding-bottom: 5vh;
   }
   #con a {
     font-size: 0.5rem;
