@@ -1,0 +1,51 @@
+body {
+  display: block;
+}
+
+/* grid items*/
+.grid-item {
+  background-color: #d3d3d3;
+}
+/* grid floats big screen */
+
+.grid-floats {
+  overflow: hidden;
+  background-color: white;
+  margin: 0 auto;
+  width: 100%;
+}
+.grid-floats > li {
+  width: 20%;
+  border: solid white 10px;
+  float: left;
+  padding-bottom: 500rem;
+  margin-bottom: -500rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: content-box;
+  list-style: none;
+}
+.grid-floats img {
+  max-width: 100%;
+}
+
+.grid-floats li:first-child {
+  width: 42%;
+}
+
+.grid-floats li:nth-child(4) {
+  display: block;
+  clear: left;
+}
+.grid-floats li:nth-child(12) {
+  display: block;
+  clear: left;
+}
+
+.grid-floats::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*grid float tablet*/
