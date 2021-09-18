@@ -27,6 +27,7 @@ body {
 }
 .grid-floats img {
   max-width: 100%;
+  mix-blend-mode: multiply;
 }
 
 .grid-floats li:first-child {
