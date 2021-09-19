@@ -2,6 +2,8 @@ body {
   display: block;
 }
 
+/*       grid with floats       */
+
 /* grid items*/
 .grid-item {
   background-color: #d3d3d3;
@@ -74,4 +76,41 @@ body {
     display: block;
     clear: left;
   }
+}
+
+/*grid float phones*/
+@media screen and (max-width: 600px) {
+  .grid-floats {
+    width: 100vmax;
+  }
+  .grid-floats > li {
+    min-width: 100%;
+    float: none;
+  }
+}
+
+/*         grid with flexbox     */
+.grid-flex {
+  max-width: 100%;
+  margin-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.grid-flex > li {
+  width: 21%;
+  border: solid white 5px;
+  list-style: none;
+  justify-items: stretch;
+  flex-grow: 1;
+}
+
+.grid-flex li:first-child {
+  width: 46%;
+}
+
+.grid-flex img {
+  max-width: 100%;
+  mix-blend-mode: multiply;
 }
