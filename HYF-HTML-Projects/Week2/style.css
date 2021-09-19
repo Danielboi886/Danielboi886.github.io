@@ -1,12 +1,31 @@
 body {
   display: block;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+  font-size: 18px;
+}
+body h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+header {
+  background-color: aquamarine;
+  margin: 0;
+}
+
+body h2 {
+  height: 100%;
+  padding: 20px;
+  background-color: turquoise;
 }
 
 /*       grid with floats       */
 
 /* grid items*/
 .grid-item {
-  background-color: #d3d3d3;
+  background-color: #ffffcc;
 }
 /* grid floats big screen */
 
@@ -14,7 +33,7 @@ body {
   overflow: hidden;
   background-color: white;
   margin: 0 auto;
-  width: 100%;
+  width: 80%;
 }
 .grid-floats > li {
   width: 20%;
@@ -90,12 +109,13 @@ body {
 }
 
 /*         grid with flexbox     */
+
+/* grid flex big sceen*/
 .grid-flex {
-  max-width: 100%;
-  margin-right: 20px;
+  max-width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
 }
 
 .grid-flex > li {
@@ -113,4 +133,26 @@ body {
 .grid-flex img {
   max-width: 100%;
   mix-blend-mode: multiply;
+}
+
+/*grid flex on tablet */
+@media screen and (max-width: 1024px) {
+  .grid-flex li:first-child,
+  .grid-flex li:nth-child(2) {
+    width: 46%;
+  }
+  .grid-flex > li {
+    width: 30%;
+  }
+}
+
+/*grid flex on phone */
+@media screen and (max-width: 600px) {
+  .grid-flex {
+    width: 100%;
+  }
+  .grid-flex > li {
+    display: block;
+    width: 100%;
+  }
 }
