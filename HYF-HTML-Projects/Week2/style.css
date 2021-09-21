@@ -4,7 +4,8 @@ body {
     sans-serif;
   font-size: 18px;
 }
-body h1,
+body
+h1, 
 h2,
 h3 {
   text-align: center;
@@ -26,6 +27,10 @@ body h2 {
 /* grid items*/
 .grid-item {
   background-color: #ffffcc;
+  transition: background-color .5s;
+}
+.grid-item:hover{
+    background-color:violet;
 }
 /* grid floats big screen */
 
