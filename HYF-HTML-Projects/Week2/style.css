@@ -100,10 +100,10 @@ body h2 {
 /*grid float phones*/
 @media screen and (max-width: 600px) {
   .grid-floats {
-    width: 100vmax;
+    width: 100%;
   }
   .grid-floats > li {
-    min-width: 100%;
+    min-width:80%;
     float: none;
   }
 }
@@ -155,4 +155,7 @@ body h2 {
     display: block;
     width: 100%;
   }
+   .grid-flex li:first-child,
+  .grid-flex li:nth-child(2) {
+    width: 100%;
 }
