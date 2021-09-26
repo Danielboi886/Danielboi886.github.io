@@ -1,0 +1,106 @@
+#hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.herotext {
+  padding-right: 10%;
+  vertical-align: middle;
+  font-size: 1.5rem;
+}
+.herotext h1 {
+  font-size: 4rem;
+  font-weight: 650;
+}
+.btn-green a {
+  font-weight: bold;
+}
+
+.herovideo video {
+  width: 120%;
+}
+.glinks {
+  color: limegreen;
+  font-weight: bold;
+}
+
+.capitalistdevils {
+  display: flex;
+  align-items: baseline;
+  padding: 50px;
+}
+
+.advanwrapper {
+  background-color: #f4f4f4;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.advan3 {
+  display: flex;
+}
+
+.advan {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+.emoji {
+  margin: 0 auto;
+  padding: 20px;
+}
+#paychanels {
+  padding: 50px 250px 50px 250px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.cardswrapper {
+  display: flex;
+  flex: 1;
+  padding-bottom: 100px;
+}
+
+.card-left,
+.card-right {
+  margin: 0 20px 0 20px;
+}
+
+.card-left img.animated-gif {
+  width: 100%;
+  border-radius: 2%;
+}
+.card-right img {
+  width: 100%;
+  border-radius: 2%;
+}
+
+#approve {
+  height: 100vh;
+  background-color: #031033;
+  color: white;
+}
+
+.p3wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.p3wrapper video {
+  padding-top: 50px;
+  width: 50%;
+}
+.p3textbox {
+  padding-left: 50px;
+}
+.p3col {
+  display: flex;
+}
+.p3col-item img {
+  padding: 20px 0 20px 0;
+}
+.svg4 {
+  width: 20px;
+}
