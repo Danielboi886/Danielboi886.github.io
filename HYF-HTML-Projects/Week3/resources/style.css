@@ -1,3 +1,7 @@
+#navigation {
+  width: 100%;
+  background-color: #f4f4f4;
+}
 #hero {
   display: flex;
   flex-direction: row;
@@ -103,4 +107,133 @@
 }
 .svg4 {
   width: 20px;
+}
+
+#understand {
+  position: relative;
+  background-color: #f4f4f4;
+  height: 85vh;
+  overflow-x: hidden;
+}
+.p4wrapper {
+  background-color: #f4f4f4;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+.p4textbox {
+  margin-right: 100px;
+}
+.p4subtextbox {
+  display: flex;
+  padding-top: 50px;
+}
+.task {
+  margin: 0 20px 0 0;
+}
+.report {
+  margin: 0 0 0 20px;
+}
+#Browser {
+  height: 90%;
+  margin-right: -450px;
+  box-shadow: 0 0 50px #ccc;
+}
+#bigcompanies {
+  margin-bottom: 100px;
+}
+.p5wapper {
+  text-align: center;
+}
+
+.p5wapper h1 {
+  margin: 50px;
+}
+
+.lush {
+  display: flex;
+  margin-top: 50px;
+}
+.lush video {
+  width: 80%;
+}
+.p5textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 100px 0 100px 100px;
+}
+
+.p5textbox img {
+  width: 200px;
+  margin-bottom: 50px;
+}
+
+.p5cards {
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+  text-align: left;
+}
+.p5cards p {
+  margin: 20px 0 20px 0;
+}
+.p5cards img {
+  width: 100%;
+  border-radius: 2%;
+}
+
+#getstarted {
+  width: 100%;
+  height: 30vh;
+  background-color: #0abf53;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#pagefooter {
+  width: 100%;
+  background-color: #031033;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.pgfoot {
+  background-color: #031033;
+  color: white;
+  display: flex;
+  width: 100%;
+}
+.lastpage {
+  list-style-type: none;
+}
+.listheader {
+  font-weight: bold;
+}
+.lastpage li {
+  margin: 10px;
+}
+.lastpage li a {
+  color: inherit;
+  text-decoration: none;
+}
+.footericon {
+  display: flex;
+  gap: 20px;
+}
+.footericon a {
+  color: inherit;
+}
+.lastpart {
+  color: grey;
+  font-size: small;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
