@@ -94,10 +94,10 @@
 
 .p3wrapper video {
   padding-top: 50px;
-  width: 50%;
+  max-width: 100%;
 }
 .p3textbox {
-  padding-left: 50px;
+  margin-left: 10%;
 }
 .p3col {
   display: flex;
@@ -236,4 +236,145 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
+}
+
+/*for phone*/
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  #hero {
+    display: block;
+  }
+  .herovideo {
+    margin-top: 20px;
+    max-width: 80%;
+  }
+  .capitalistdevils {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+
+  .capitalistdevils > div img {
+    max-width: 20px;
+  }
+
+  #threecols {
+    display: block;
+    margin-bottom: 50px;
+  }
+  .advanwrapper {
+    height: 100%;
+  }
+  .advan3 {
+    display: block;
+    margin-bottom: 50px;
+  }
+  .advan3 div {
+    padding-bottom: 20px;
+  }
+  #paychanels {
+    padding: 0;
+    display: block;
+  }
+  .cardswrapper {
+    display: block;
+  }
+  #approve {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .p3wrapper {
+    display: block;
+  }
+  .p3wrapper video {
+    width: 100%;
+  }
+  .p3col {
+    display: block;
+  }
+  .p4textbox {
+    margin: 0;
+  }
+  .p4wrapper {
+    display: block;
+    overflow: hidden;
+  }
+  .p4wrapper img {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+  }
+  .lush {
+    display: block;
+  }
+  .p5cards {
+    display: block;
+  }
+  .p5textbox {
+    padding: 10px;
+  }
+  .pgfoot {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .pgfoot > div {
+    margin: 0;
+    padding: 0;
+  }
+  .lastpage {
+    margin: 0;
+    padding: 0;
+  }
+  .lastpage li {
+    margin-bottom: 10px;
+    padding: 0;
+  }
+}
+
+/* Adyen does not have an iPad version but I try to cover iPad*/
+@media only screen and (max-width: 800px) {
+  html,
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  #threecols {
+    display: block;
+    margin-bottom: 50px;
+  }
+  .p3wrapper {
+    display: block;
+  }
+  .p3wrapper video {
+    align-self: center;
+    height: 50vh;
+  }
+  .p5wapper {
+    display: block;
+  }
+  .p5wapper video {
+    min-width: 40vw;
+  }
+  .pgfoot {
+    width: 100%;
+  }
+  .pgfoot > div {
+    margin: 0;
+    padding: 0;
+  }
+  .lastpage {
+    margin: 0;
+    padding: 0;
+  }
+  .lastpage li {
+    margin-bottom: 10px;
+    padding: 0;
+  }
 }
