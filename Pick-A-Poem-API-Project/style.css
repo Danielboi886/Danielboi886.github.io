@@ -8,9 +8,10 @@
 }
 
 #hero {
-  height: 200px;
+  height: 30%;
   background-image: url("src/hero1.jpg");
   background-size: cover;
+  display: block;
 }
 
 #feeling_question {
