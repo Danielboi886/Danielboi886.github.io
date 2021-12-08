@@ -28,7 +28,8 @@ export const questionPrompt = () => {
   hero.style.backgroundImage = `url('./src/hero${i}.jpg')`;
   const feelingQuestion = document.createElement("h1");
   feelingQuestion.setAttribute("id", "feeling_question");
-  feelingQuestion.textContent = "Pick a vibe and I will give you a poem!";
+  feelingQuestion.textContent =
+    "Pick a vibe and I will give you a poem!(You can pick more than one!)";
   document.body.appendChild(hero);
   hero.appendChild(feelingQuestion);
 };
